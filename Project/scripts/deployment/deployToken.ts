@@ -14,8 +14,9 @@ async function deployToken(signer: ethers.Wallet) {
   console.log("Awaiting confirmations");
   await tokenContract.deployed();
   console.log("Completed");
+  console.log(`Token contract deployed at ${tokenContract.address}\n`);
 
-  return { tokenContract };
+  return tokenContract;
 }
 
 export default deployToken;

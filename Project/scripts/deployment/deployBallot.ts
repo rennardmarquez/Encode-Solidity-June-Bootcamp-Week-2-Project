@@ -31,8 +31,9 @@ async function deployBallot(tokenContractAddress: string, signer: Wallet) {
   console.log("Awaiting confirmations");
   await ballotContract.deployed();
   console.log("Completed");
+  console.log(`Ballot Contract deployed at ${ballotContract.address}\n`);
 
-  return { ballotContract };
+  return ballotContract;
 }
 
 export default deployBallot;

@@ -18,5 +18,5 @@ export default async function getSigner() {
     throw new Error("Not enough ether");
   }
 
-  return { signer };
+  return signer;
 }
