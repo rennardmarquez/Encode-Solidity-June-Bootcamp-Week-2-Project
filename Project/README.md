@@ -92,7 +92,7 @@ Ballot Contract deployed at 0xE54830c18D0dD80B48792E2DA471CA1207851955
 
 **6. Delegatee Casting vote**
 
-The delegatee will have a voting power of 10 based on **Step #3**. Delegatee will now use these tokens to vote and use 1 voting power to proposal with index 1. This will update its voting power to 9.
+The delegatee will have a voting power of 10 based on **Step #4**. Delegatee will now use these tokens to vote proposal with index 1 using 1.0 token. This will update its voting power to 9.0.
 
 Output:
 
