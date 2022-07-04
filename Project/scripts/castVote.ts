@@ -9,7 +9,7 @@ async function castVote(ballotContractAddress: string, signer: Signer) {
     signer
   ) as CustomBallot;
 
-  console.log("Casting vote to proposal with index 1");
+  console.log("Casting vote to Proposal with index 1");
   const voteTx = await ballotContract.vote(1, ethers.utils.parseEther("1"));
   await voteTx.wait();
   console.log("Vote transaction completed. Hash:", voteTx.hash);
