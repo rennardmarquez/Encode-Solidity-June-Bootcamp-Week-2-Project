@@ -1,19 +1,9 @@
-import { ethers } from "ethers";
-import * as tokenJson from "../artifacts/contracts/Token.sol/MyToken.json";
 import { MyToken } from "../typechain";
 
 async function delegateTokens(
-  tokenAddress: string,
-  delegateeAddress: string,
-  signer: ethers.Wallet
+  tokenContract: MyToken,
+  delegateeAddress: string
 ) {
-  const tokenContract: MyToken = new ethers.Contract(
-    tokenAddress,
-    tokenJson.abi,
-    signer
-  ) as MyToken;
-
-  //delegate tokens
   console.log(`Delegating tokens to ${delegateeAddress}.`);
   console.log(
     `Initial voting power: ${await tokenContract.getVotes(delegateeAddress)}`
@@ -22,7 +12,7 @@ async function delegateTokens(
   await tx.wait();
   console.log("Delegate transaction completed. Hash:", tx.hash);
   console.log(
-    `Final voting power: ${await tokenContract.getVotes(delegateeAddress)}\n`
+    `Updated voting power: ${await tokenContract.getVotes(delegateeAddress)}\n`
   );
 }
 

@@ -1,4 +1,4 @@
-import { Contract, Wallet, ethers } from "ethers";
+import { Wallet, ethers } from "ethers";
 import "dotenv/config";
 import * as ballotJson from "../../artifacts/contracts/CustomBallot.sol/CustomBallot.json";
 
