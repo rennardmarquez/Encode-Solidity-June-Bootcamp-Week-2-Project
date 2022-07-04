@@ -104,7 +104,7 @@ Updated voting power: 9.0
 
 **7. Get winner name**
 
-Based on our proposal inputs, `[Ham Burger Pizza Donut]`, Burger has index 1 and will therefore be the current winner.
+Based on our proposal inputs, `[Ham, Burger, Pizza, Donut]`, Burger has index 1 and will therefore be the current winner.
 
 Output:
 
