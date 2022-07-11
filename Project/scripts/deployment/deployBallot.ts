@@ -1,5 +1,4 @@
 import { Wallet, ethers } from "ethers";
-import "dotenv/config";
 import * as ballotJson from "../../artifacts/contracts/CustomBallot.sol/CustomBallot.json";
 
 function convertStringArrayToBytes32(array: string[]) {
